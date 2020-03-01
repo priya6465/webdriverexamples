@@ -12,6 +12,7 @@ System.setProperty("webdriver.chrome.driver","F:\\selenium software\\chromedrive
 		
 		driver=new ChromeDriver();
      driver.get("https://opensource-demo.orangehrmlive.com/");
+     driver.manage().window().maximize();
      
     String Attributevalue= driver.findElement(By.name("Submit")).getAttribute("value");
     System.out.println(Attributevalue);
