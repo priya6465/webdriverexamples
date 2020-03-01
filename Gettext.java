@@ -15,8 +15,8 @@ static WebDriver driver;
 			driver.findElement(By.name("txtUsername")).sendKeys("Admin");
 		     driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 		    driver.findElement(By.id("btnLogin")).sendKeys(Keys.ENTER);
-		   String availableText= driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).getText();
-		    System.out.println("Text avaliable:"+availableText);
+		   String availableTexts= driver.findElement(By.xpath("//a[@id='menu_admin_viewAdminModule']")).getText();
+		    System.out.println("Text avaliable:"+availableTexts);
 		    Thread.sleep(5000);
 		driver.close();
 	}
